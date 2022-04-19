@@ -37,8 +37,8 @@ class PdfReport:
         pass
 
 
-the_bill = Bill(amount=100, period="April 2022")
-jimmy = Flatmate(name="Jimmy", days_in_house=20)
-kim = Flatmate(name="Kim", days_in_house=25)
+the_bill = Bill(500, "April 2022")
+jimmy = Flatmate("Jimmy", 20)
+kim = Flatmate("Kim", 25)
 
-print(jimmy.pays(bill=the_bill))
+print(jimmy.pays(the_bill))
