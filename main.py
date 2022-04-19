@@ -20,7 +20,25 @@ class Flatmate:
         self.days_in_house = days_in_house
 
     def pays(self, bill):
-        pass
-        
+        return bill.amount / 2
 
-bill = Bill(120)
+
+class PdfReport:
+    """
+    Creates a Pdf file that contains data about the
+    flatmates such as their names, their due amounts
+    and the period of the bill.
+    """
+
+    def __init__(self, filename):
+        self.filename = filename
+
+    def generate(self, flatmate1, flatmate2, bill):
+        pass
+
+
+the_bill = Bill(amount=100, period="April 2022")
+jimmy = Flatmate(name="Jimmy", days_in_house=20)
+kim = Flatmate(name="Kim", days_in_house=25)
+
+print(jimmy.pays(bill=the_bill))
