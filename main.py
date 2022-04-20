@@ -50,7 +50,11 @@ class PdfReport:
         pdf.cell(w=100, h=40, txt='Period:', border=1)
         pdf.cell(w=150, h=40, txt=bill.period, border=1, ln=1)
 
-        pdf.output('bill.pdf')
+        # Insert name and due amount of the first flatmate
+        pdf.cell(w=100, h=40, txt=flatmate1.name, border=1)
+        pdf.cell(w=150, h=40, txt=str(flatmate1.pays(bill, flatmate2)), border=1, ln=1)
+
+        pdf.output(self.filename)
 
 
 the_bill = Bill(amount=120, period="April 2022")
