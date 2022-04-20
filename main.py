@@ -1,3 +1,6 @@
+import os.path
+import webbrowser
+
 from fpdf import FPDF
 
 
@@ -67,7 +70,10 @@ class PdfReport:
         pdf.set_font(family='Times', size=12, style='B')
         pdf.cell(w=100, h=25, txt=flatmate2.name, border=0)
         pdf.cell(w=150, h=25, txt=flatmate2_pay, border=0, ln=125)
+
         pdf.output(self.filename)
+
+        webbrowser.open('file://' + os.path.realpath(self.filename))
 
 
 the_bill = Bill(amount=120, period="April 2022")
