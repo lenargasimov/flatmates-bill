@@ -73,7 +73,7 @@ class PdfReport:
 
         pdf.output(self.filename)
 
-        webbrowser.open('file://'+ os.path.realpath(self.filename))
+        webbrowser.open('file://' + os.path.realpath(self.filename))
 
 
 the_bill = Bill(amount=120, period="April 2022")
