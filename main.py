@@ -76,7 +76,10 @@ class PdfReport:
         webbrowser.open('file://' + os.path.realpath(self.filename))
 
 
-the_bill = Bill(amount=120, period="April 2022")
+a = float(input("Hey user, enter the bill amount: "))
+print("This is a", a)
+
+the_bill = Bill(amount=a, period="April 2022")
 jimmy = Flatmate(name="Jimmy", days_in_house=20)
 kim = Flatmate(name="Kim", days_in_house=25)
 
