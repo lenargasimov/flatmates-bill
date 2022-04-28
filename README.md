@@ -3,11 +3,15 @@
 </p>
 
 <p align="center">
-<h1 align="center"><img src="image/bill.png" width="50px" alt=""> Flatmates Bill 
+<h1 align="center">Flatmates Bill 
     <a href="https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?&url=https://github.com/lenargasimov/flatmates-bill&via=lenargasimov&hashtags=python,developers">
       <img alt="Tweet" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" />
     </a>
 </h1>
+</p>
+
+<p align="center">
+    <img src="image/bill.png" width="175px" alt=""> 
 </p>
 
 <p align="center">
